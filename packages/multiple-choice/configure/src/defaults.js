@@ -17,7 +17,8 @@ export default {
     limitChoicesNumber: true,
     teacherInstructionsEnabled: true,
     studentInstructionsEnabled: true,
-    verticalMode: true
+    verticalMode: false,
+    positionTopEditorToolbar: 'bottom',
   },
   configuration: {
     verticalMode: {

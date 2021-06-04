@@ -5,6 +5,7 @@ exports.model = (id, element) => ({
   'promptEnabled': true,
   'teacherInstructionsEnabled': true,
   'studentInstructionsEnabled': true,
+  'positionTopEditorToolbar': 'top',
   'rationale': null,
   'prompt': '<p>Drag and drop the correct array into the box next to the matching word problem.</p>',
   'lockChoiceOrder': true,

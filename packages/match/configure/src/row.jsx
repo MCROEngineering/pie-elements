@@ -111,6 +111,7 @@ export class Row extends React.Component {
               markup={row.title}
               onChange={this.onRowTitleChange(idx)}
               className={classes.editor}
+              toolbarOpts={{ position: model.positionTopEditorToolbar }}
               pluginProps={{
                 image: {
                   disabled: !enableImages

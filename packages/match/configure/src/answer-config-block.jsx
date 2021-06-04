@@ -10,6 +10,7 @@ import Row from './row';
 import { swap, withDragContext } from '@pie-lib/drag';
 import debug from 'debug';
 import lodash from 'lodash';
+import EditableHtml from '@pie-lib/editable-html';
 
 const log = debug('pie-elements:match:configure');
 
@@ -162,6 +163,7 @@ class AnswerConfigBlock extends React.Component {
               onMoveRow={this.moveRow}
               imageSupport={imageSupport}
               enableImages={model.enableImages}
+              toolbarOpts={{ position: model.positionTopEditorToolbar }}
             />
           ))}
           <AddRow onAddClick={onAddRow} />

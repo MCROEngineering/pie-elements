@@ -254,6 +254,7 @@ class Configure extends React.Component {
                 onChange={this.onTeacherInstructionsChanged}
                 imageSupport={imageSupport}
                 nonEmpty={false}
+                toolbarOpts={{ position: model.positionTopEditorToolbar }}
               />
             </InputContainer>
           )}
@@ -270,6 +271,7 @@ class Configure extends React.Component {
                 imageSupport={imageSupport}
                 nonEmpty={false}
                 disableUnderline
+                toolbarOpts={{ position: model.positionTopEditorToolbar }}
               />
             </InputContainer>
           )}
@@ -284,6 +286,7 @@ class Configure extends React.Component {
                 markup={model.rationale || ''}
                 onChange={this.onRationaleChanged}
                 imageSupport={imageSupport}
+                toolbarOpts={{ position: model.positionTopEditorToolbar }}
               />
             </InputContainer>
           )}
@@ -305,6 +308,7 @@ class Configure extends React.Component {
             <FeedbackConfig
               feedback={model.feedback}
               onChange={this.onFeedbackChange}
+              toolbarOpts={{ position: model.positionTopEditorToolbar }}
             />
           )}
         </div>

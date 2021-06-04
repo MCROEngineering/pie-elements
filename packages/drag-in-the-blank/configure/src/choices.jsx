@@ -32,8 +32,9 @@ export class Choices extends React.Component {
     duplicates: PropTypes.bool,
     model: PropTypes.object.isRequired,
     onChange: PropTypes.func.isRequired,
-    classes: PropTypes.object.isRequired
-  };
+    classes: PropTypes.object.isRequired,
+    toolbarOpts: PropTypes.object,
+};
 
   state = {};
 
@@ -149,9 +150,9 @@ export class Choices extends React.Component {
     const {
       classes,
       duplicates,
+      toolbarOpts
     } = this.props;
     const visibleChoices = this.getVisibleChoices() || [];
-
     return (
       <div className={classes.design}>
         <Button
@@ -179,6 +180,7 @@ export class Choices extends React.Component {
                     <EditableHtml
                       ref={ref => (this.focusedNodeRef = ref)}
                       className={classes.prompt}
+                      toolbarOpts={toolbarOpts}
                       markup={c.value}
                       pluginProps={{
                         video: {

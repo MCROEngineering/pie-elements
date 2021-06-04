@@ -4,6 +4,7 @@ exports.model = (id, element) => ({
   disabled: false,
   mode: 'gather',
   prompt: 'Use the dropdowns to complete the sentence',
+  positionTopEditorToolbar: 'top',
   promptEnabled: true,
   shuffle: true,
   markup: '<div><p>The {{0}} jumped {{1}} the {{2}}</p></div>',

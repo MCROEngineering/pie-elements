@@ -24,7 +24,8 @@ export default {
     promptEnabled: true,
     rationaleEnabled: true,
     teacherInstructionsEnabled: true,
-    studentInstructionsEnabled: true
+    studentInstructionsEnabled: true,
+    positionTopEditorToolbar: 'bottom',
   },
   configuration: {
     enableImages: {

@@ -120,6 +120,7 @@ const Design = withStyles(styles)(props => {
             onChange={onTeacherInstructionsChanged}
             imageSupport={imageSupport}
             nonEmpty={false}
+            toolbarOpts={{ position: model.positionTopEditorToolbar }}
           />
         </InputContainer>
       )}
@@ -133,6 +134,7 @@ const Design = withStyles(styles)(props => {
             imageSupport={imageSupport}
             nonEmpty={false}
             disableUnderline
+            toolbarOpts={{ position: model.positionTopEditorToolbar }}
           />
         </InputContainer>
       )}
@@ -154,6 +156,7 @@ const Design = withStyles(styles)(props => {
             onChange={c => onChoiceChanged(index, c)}
             allowFeedBack={feedbackEnabled}
             allowDelete={deleteChoice.settings}
+            toolbarOpts={{ position: model.positionTopEditorToolbar }}
             noLabels
           />
           {rationaleEnabled && (
@@ -172,6 +175,7 @@ const Design = withStyles(styles)(props => {
                   })
                 }
                 imageSupport={imageSupport}
+                toolbarOpts={{ position: model.positionTopEditorToolbar }}
               />
             </InputContainer>
           )}

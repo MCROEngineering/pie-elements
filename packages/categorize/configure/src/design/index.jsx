@@ -228,6 +228,7 @@ export class Design extends React.Component {
                   imageSupport={imageSupport}
                   nonEmpty={false}
                   disableUnderline
+                  toolbarOpts={{ position: model.positionTopEditorToolbar }}
                 />
               </InputContainer>
             )}
@@ -243,6 +244,7 @@ export class Design extends React.Component {
                   onChange={this.changeTeacherInstructions}
                   imageSupport={imageSupport}
                   nonEmpty={false}
+                  toolbarOpts={{ position: model.positionTopEditorToolbar }}
                 />
               </InputContainer>
             )}
@@ -258,6 +260,7 @@ export class Design extends React.Component {
                   onChange={this.changeRationale}
                   imageSupport={imageSupport}
                   nonEmpty={false}
+                  toolbarOpts={{ position: model.positionTopEditorToolbar }}
                 />
               </InputContainer>
             )}
@@ -267,6 +270,7 @@ export class Design extends React.Component {
               model={model}
               categories={categories || []}
               onModelChanged={this.updateModel}
+              toolbarOpts={{ position: model.positionTopEditorToolbar }}
             />
 
             <Header
@@ -309,6 +313,7 @@ export class Design extends React.Component {
               <FeedbackConfig
                 feedback={model.feedback}
                 onChange={this.changeFeedback}
+                toolbarOpts={{ position: model.positionTopEditorToolbar }}
               />
             )}
           </div>

@@ -328,7 +328,7 @@ export class Main extends React.Component {
       rationale = {},
       teacherInstructions = {}
     } = configuration || {};
-    const { rationaleEnabled, promptEnabled, teacherInstructionsEnabled } =
+    const { rationaleEnabled, promptEnabled, teacherInstructionsEnabled, positionTopEditorToolbar } =
       model || {};
 
     return (
@@ -373,6 +373,7 @@ export class Main extends React.Component {
                   onChange={this.onTeacherInstructionsChanged}
                   imageSupport={imageSupport}
                   nonEmpty={false}
+                  toolbarOpts={{ position: model.positionTopEditorToolbar }}
                 />
               </InputContainer>
             )}
@@ -389,6 +390,7 @@ export class Main extends React.Component {
                   imageSupport={imageSupport}
                   nonEmpty={false}
                   disableUnderline
+                  toolbarOpts={{ position: model.positionTopEditorToolbar }}
                 />
               </InputContainer>
             )}
@@ -403,6 +405,7 @@ export class Main extends React.Component {
                   markup={model.rationale || ''}
                   onChange={this.onRationaleChanged}
                   imageSupport={imageSupport}
+                  toolbarOpts={{ position: model.positionTopEditorToolbar }}
                 />
               </InputContainer>
             )}
