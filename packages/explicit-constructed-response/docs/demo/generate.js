@@ -13,5 +13,6 @@ exports.model = (id, element) => ({
     2: [choice('moon', '0')]
   },
   prompt: 'Complete the sentence',
-  promptEnabled: true
+  promptEnabled: true,
+  positionTopEditorToolbar: 'top',
 });
