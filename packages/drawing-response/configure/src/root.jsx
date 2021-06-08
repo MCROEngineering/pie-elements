@@ -109,6 +109,7 @@ export class Root extends React.Component {
                   onChange={this.onTeacherInstructionsChanged}
                   imageSupport={imageSupport}
                   nonEmpty={false}
+                  toolbarOpts={{ position: model.positionTopEditorToolbar }}
                 />
               </InputContainer>
             )}
@@ -118,6 +119,7 @@ export class Root extends React.Component {
                 <EditableHtml
                   markup={model.prompt}
                   onChange={this.onPromptChanged}
+                  toolbarOpts={{ position: model.positionTopEditorToolbar }}
                 />
               </InputContainer>
             )}
@@ -131,6 +133,7 @@ export class Root extends React.Component {
                   markup={model.rationale || ''}
                   onChange={this.onRationaleChanged}
                   imageSupport={imageSupport}
+                  toolbarOpts={{ position: model.positionTopEditorToolbar }}
                 />
               </InputContainer>
             )}
