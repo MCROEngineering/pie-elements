@@ -100,6 +100,7 @@ exports.model = (id, element) => ({
     title: '<div></div>'
   },
   id,
+  positionTopEditorToolbar: 'top',
   prompt:
     '<div>Part B:<br/><br/>On the number line, plot the probability that a card selected at random from the set of cards will have a rhombus or a rectangle.</div>',
   element

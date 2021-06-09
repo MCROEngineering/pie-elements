@@ -1,5 +1,6 @@
 export const model = {
   correctResponse: [],
+  positionTopEditorToolbar: 'bottom',
   graph: {
     domain: { min: -5, max: 5 },
     ticks: {

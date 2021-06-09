@@ -254,6 +254,7 @@ export class Main extends React.Component {
               onChange={prompt => onChange({ prompt })}
               nonEmpty={false}
               disableUnderline
+              toolbarOpts={{ position: model.positionTopEditorToolbar }}
             />
           </FormSection>
         )}
@@ -292,6 +293,7 @@ export class Main extends React.Component {
           <EditableHtml
             markup={graph.title || ''}
             onChange={this.changeGraphTitle}
+            toolbarOpts={{ position: model.positionTopEditorToolbar }}
           />
         </FormSection>
         <FormSection label={'Limits'}>
@@ -378,6 +380,7 @@ export class Main extends React.Component {
             <FeedbackConfig
               feedback={model.feedback}
               onChange={feedback => onChange({ feedback })}
+              toolbarOpts={{ position: model.positionTopEditorToolbar }}
             />
           </React.Fragment>
         )}
